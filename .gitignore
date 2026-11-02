@@ -1,0 +1,16 @@
+# Installed packages (can be re-downloaded any time, and are huge)
+node_modules/
+
+# Secret settings like passwords and keys - NEVER upload these
+.env
+
+# Built/generated files
+dist/
+
+# Local database files
+*.db
+
+# Editor and system junk
+.vscode/
+.DS_Store
+Thumbs.db
