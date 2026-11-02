@@ -24,3 +24,4 @@ I'm building it step by step to learn full-stack web development from scratch.
 ## Progress log
 
 - **Step 1:** Project created and put under Git version control.
+- **Lesson 1:** Hand-built login page with HTML, CSS and JavaScript (`learning/01-login-page`).

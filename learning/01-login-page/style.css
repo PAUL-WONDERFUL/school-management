@@ -1,0 +1,88 @@
+/* CSS = how the page LOOKS: colours, sizes, spacing, layout.
+   Each rule has the form:   selector { property: value; }
+   The selector picks WHICH elements to style:
+     body      -> every <body> tag
+     .card     -> anything with class="card"   (dot = class)
+     #message  -> the element with id="message" (hash = id)        */
+
+body {
+  margin: 0;
+  min-height: 100vh;              /* 100vh = full height of the screen */
+  display: flex;                  /* flex lets us centre things easily... */
+  align-items: center;            /* ...vertically */
+  justify-content: center;        /* ...and horizontally */
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(circle at top, #1e1b4b, #0b0b14);  /* dark glow */
+  color: #e5e7eb;                 /* text colour (light grey) */
+}
+
+.card {
+  width: 340px;
+  padding: 32px;                  /* space INSIDE the box */
+  border-radius: 16px;            /* rounded corners */
+  background: rgba(255, 255, 255, 0.05);   /* see-through white */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.35);  /* the purple glow */
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+label {
+  display: block;                 /* put each label on its own line */
+  margin: 14px 0 6px;             /* space OUTSIDE: top, sides, bottom */
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;         /* keeps padding inside the 100% width */
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {                    /* ":focus" = while the user is typing in it */
+  outline: none;
+  border-color: #6366f1;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;                /* hand cursor on hover */
+  transition: background 0.2s;    /* smooth colour change */
+}
+
+button:hover {                    /* ":hover" = while the mouse is over it */
+  background: #818cf8;
+}
+
+#message {
+  min-height: 20px;
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+.error   { color: #f87171; }      /* red */
+.success { color: #4ade80; }      /* green */

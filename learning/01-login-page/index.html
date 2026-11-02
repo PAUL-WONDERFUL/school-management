@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- HTML = the CONTENT of the page. It's made of "tags" like <h1>...</h1>.
+     A tag opens with <name> and closes with </name>. Everything between is its content. -->
+<html lang="en">
+
+<head>
+  <!-- The <head> holds settings. Nothing in here shows on the page itself. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Login</title>               <!-- the text on the browser tab -->
+  <link rel="stylesheet" href="style.css">  <!-- connect the CSS (styling) file -->
+</head>
+
+<body>
+  <!-- The <body> holds everything you SEE on the page. -->
+
+  <div class="card">
+    <!-- <div> is a box used to group things. class="card" gives it a name CSS can style. -->
+
+    <h1>Crayon International School</h1>          <!-- h1 = biggest heading -->
+    <p class="subtitle">Sign in to continue</p>  <!-- p = paragraph -->
+
+    <form id="login-form">
+      <!-- <form> groups the input boxes. id="login-form" is a unique name JavaScript uses to find it. -->
+
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="e.g. admin">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Your password">
+      <!-- type="password" hides the letters as dots -->
+
+      <label for="role">I am a...</label>
+      <select id="role">
+        <!-- <select> is a dropdown; each <option> is a choice -->
+        <option value="admin">Admin</option>
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+        <option value="parent">Parent</option>
+      </select>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="message"></p>
+    <!-- Empty for now. JavaScript will write a message in here. -->
+  </div>
+
+  <script src="script.js"></script>  <!-- connect the JavaScript (behaviour) file -->
+</body>
+
+</html>
